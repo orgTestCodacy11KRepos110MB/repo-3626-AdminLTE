@@ -100,8 +100,25 @@ a:hover {
 .content-header {
   background-color: transparent;
 }
+.navbar-nav > .user-menu > .dropdown-menu {
+  margin: 0;
+  border: 1px solid var(--primary-color);
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+  padding: 0;
+  color: var(--primary-color-darker)
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer a {
+  padding: 8px 12px;
+}
 .navbar-nav > .user-menu > .dropdown-menu > .user-footer a:hover {
-  color: var(--primary-color-darker) !important;
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+.user-menu hr {
+  margin: 0;
+  opacity: 1;
+  border-color: var(--primary-color-darker);
 }
 
 .wrapper,
@@ -207,7 +224,10 @@ a:hover {
   color: #567;
 }
 .nav-tabs-custom > .nav-tabs > li > a:focus {
-  color: #3c8dbc;
+  border-top-color: var(--primary-color-darker);
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: var(--primary-color);
 }
 
 .login-box {
